@@ -7,6 +7,9 @@ import java.util.List;
  * Created by TheDancerCodes on 20/03/2018.
  */
 
+// DataManager is a Singleton:
+// There’s only one instance of DataManager throughout the entire Application.
+
 public class DataManager {
     private static DataManager ourInstance = null;
 
@@ -54,7 +57,7 @@ public class DataManager {
     }
 
     // Returns back a list of Courses
-    // The result of the getCourses call is what we are going to associate with the
+    // The result of the getCourses call is what we are going to associate with the Spinner
     public List<CourseInfo> getCourses() {
         return mCourses;
     }
