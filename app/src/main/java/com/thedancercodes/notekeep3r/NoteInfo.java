@@ -42,6 +42,7 @@ public final class NoteInfo {
         mText = text;
     }
 
+    // getCompareKey() concatenates courseId, title and text
     private String getCompareKey() {
         return mCourse.getCourseId() + "|" + mTitle + "|" + mText;
     }
@@ -61,6 +62,8 @@ public final class NoteInfo {
         return getCompareKey().hashCode();
     }
 
+    // toString() method populates the list items for us for each note.
+    // toString() gives us the representation of each note.
     @Override
     public String toString() {
         return getCompareKey();
